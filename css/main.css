@@ -63,6 +63,7 @@ body{
   line-height: 28px;
   letter-spacing: 0.5px;
   color: #4C5862;
+  background: #F2F2F2;
 }
 .container{
   max-width: 1310px;
@@ -85,7 +86,7 @@ img{
 }
 .header-container{
   padding-top: 59px;
-  padding-bottom: 59px;
+  padding-bottom: 155px;
 }
 /* site-nav */
 .site-nav{
@@ -204,7 +205,7 @@ img{
 }
 .free-link{
   display: inline-block;
-  margin-left: 16px;
+  margin-right: 16px;
   padding: 15px 17px;
   background: #FFFFFF;
   border-radius: 28px;
@@ -219,4 +220,47 @@ img{
 .learn-link:hover{
   background: #FFFFFF;
   color: #FF7B86;
+}
+
+/* design-section */
+.design-section{
+  margin-top: 71px;
+  margin-bottom: 57px;
+  padding-top: 79px;
+  padding-bottom: 205px;
+  background-image: url("../images/illustration-editor-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 136% center;
+  background-size:  58%;
+  overflow: hidden;
+}
+.design-container{
+  display: flex;
+  flex-direction: column;
+}
+.design-title{
+  margin-top: 0;
+  margin-bottom: 93px;
+  align-self: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 61px;
+  letter-spacing: -1.2px;
+  color: #1F3E5A;
+}
+.design-features{
+  display: flex;
+  width: 540px;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.feature + .feature{
+  margin-top: 64px;
+}
+.feature-title{
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  color: #1F3E5A;
 }
