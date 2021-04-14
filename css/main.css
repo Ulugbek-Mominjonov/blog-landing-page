@@ -309,3 +309,37 @@ img{
   line-height: 28px;
   letter-spacing: 0.5px;
 }
+
+/* blog-feature */
+.blog-feature{
+  margin-top: 115px;
+  /* height: 786px; */
+  background-image: url("../images/illustration-laptop-desktop.svg");
+  background-size: contain;
+  background-position: -279px center;
+  background-repeat: no-repeat;
+}
+.blog-container{
+  padding-top: 185px;
+  padding-bottom: 185px;
+}
+.feature-wrapper{
+  width: 540px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.feature-item + .feature-item{
+  margin-top: 64px;
+}
+.feature-title{
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  color: #1F3E5A;
+}
+.feature-info{
+  margin: 0;
+}
