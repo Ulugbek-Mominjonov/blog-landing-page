@@ -225,9 +225,9 @@ img{
 /* design-section */
 .design-section{
   margin-top: 71px;
-  margin-bottom: 57px;
+  margin-bottom: 49px; 
   padding-top: 79px;
-  padding-bottom: 205px;
+  padding-bottom: 120px;
   background-image: url("../images/illustration-editor-desktop.svg");
   background-repeat: no-repeat;
   background-position: 136% center;
@@ -263,4 +263,49 @@ img{
   font-size: 28px;
   line-height: 28px;
   color: #1F3E5A;
+}
+
+/* art-section */
+.art-section{
+  background: url("../images/Group\ 22.png"),
+  linear-gradient(135deg, #2D2E40 0%, #3F4164 100%);
+  background-repeat: no-repeat;
+}
+.art-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 111px;
+  padding-bottom: 111px;
+}
+.art-container::before{
+  position: absolute;
+  top: -49px;
+  content: "";
+  width: 472px;
+  height: 499px;
+  background-image: url("../images/Group\ 18.png");
+  background-size: contain;
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+}
+.art-data{
+  width: 540px;
+  margin-left: auto;
+  color: #FFFFFF;
+}
+.art-title{
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 61px;
+  letter-spacing: -1.2px;
+}
+.art-info{
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
 }
