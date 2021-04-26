@@ -46,6 +46,18 @@
        url('../fonts/overpass-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/overpass-v5-latin-600.woff') format('woff'), /* Modern Browsers */
 }
+/* animation */
+@keyframes phone {
+  0% {
+    transform: rotate(-1.2deg);
+  }
+  50% {
+    transform: rotate(1.2deg);
+  }
+  100% {
+    transform: rotate(-1.2deg);
+  }
+}
 
 /* COMMON STYLES */
 html{
@@ -136,6 +148,7 @@ img{
   display: block;
 }
 .product-link{
+  display: block;
   font-size: 15px;
   line-height: 33px;
   color: #2D2E40;
@@ -295,6 +308,8 @@ img{
   background-size: contain;
   /* background-position: center center; */
   background-repeat: no-repeat;
+  animation: phone 3s ease-in-out infinite;
+  animation-fill-mode: both;
 }
 .art-data{
   width: 540px;
@@ -388,7 +403,9 @@ img{
   line-height: 33px;
   color: rgba(255, 255, 255, 0.75);
   mix-blend-mode: normal;
+  transition: 0.5s;
 }
 .section-link:hover{
   color: #fff;
+  text-indent: 10px;
 }
