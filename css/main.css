@@ -55,8 +55,10 @@ html{
   box-sizing: inherit;
 }
 body{
+  /* max-width: 1440px; */
   margin: 0;
   padding: 0;
+  /* margin: 0 auto; */
   font-family: "Overpass", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -208,6 +210,7 @@ img{
   margin-right: 16px;
   padding: 15px 17px;
   background: #FFFFFF;
+  border: 1px solid transparent;
   border-radius: 28px;
   color: #FF505C;
 }
@@ -230,8 +233,8 @@ img{
   padding-bottom: 120px;
   background-image: url("../images/illustration-editor-desktop.svg");
   background-repeat: no-repeat;
-  background-position: 136% center;
-  background-size:  58%;
+  background-position: calc(50% + 487px) center;
+  background-size:  contain;
   overflow: hidden;
 }
 .design-container{
@@ -267,9 +270,13 @@ img{
 
 /* art-section */
 .art-section{
-  background: url("../images/Group\ 22.png"),
-  linear-gradient(135deg, #2D2E40 0%, #3F4164 100%);
+  background: linear-gradient(135deg, #2D2E40 0%, #3F4164 100%);
+}
+.bgimage-box{
+  background: url("../images/Group\ 22.png");
   background-repeat: no-repeat;
+  background-position: calc(50% - 274px);
+  background-size: contain;
 }
 .art-container{
   display: flex;
@@ -314,8 +321,9 @@ img{
 .blog-feature{
   margin-top: 115px;
   background-image: url("../images/illustration-laptop-desktop.svg");
-  background-position: -279px center;
   background-repeat: no-repeat;
+  background-position: calc(50% - 460px) center;
+  background-size: contain;
 }
 .blog-container{
   padding-top: 205px;
@@ -351,6 +359,7 @@ img{
 .footer-container{
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -358,19 +367,13 @@ img{
 .footer-logo{
   margin-right: 184px;
 }
-.footer-list{
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
-.list-item{
+.footer-section{
   width: 255px;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
 }
-.item-title{
+.section-title{
   margin-top: 0;
   margin-bottom: 21px;
   font-weight: 500;
@@ -378,12 +381,14 @@ img{
   line-height: 33px;
   color: #FFFFFF;
 }
-.item-link{
+.section-link{
   text-decoration: none;
   font-weight: normal;
   font-size: 15px;
   line-height: 33px;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.75);
   mix-blend-mode: normal;
-  opacity: 0.75;
+}
+.section-link:hover{
+  color: #fff;
 }
